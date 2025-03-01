@@ -35,8 +35,6 @@ body {
     flex-wrap: wrap;
     border-radius: 7px;
     background-color: var(--desaturated-blue-background);
-
-    width: fit-content;
 }
 
 .text-div h1 {
@@ -103,10 +101,49 @@ h1 span {
     justify-content: space-between;
 }
 .stats span {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
-@media screen and (min-width: 375px) {
-    
+
+@media screen and (max-width: 1153px) {
+    .flex-container {
+        width: 500px;
+    }
+    .image-div,
+    .image-div::before,
+    .image-div img {
+        border-radius: 7px 7px 0 0;
+    }
+}
+
+@media screen and (max-width: 625px) {
+
+    body {
+        padding: 2rem;
+    }
+    .flex-container {
+        width: 100%;
+        max-width: 375px;
+    }
+    .image-div,
+    .text-div {
+        width: 100%;
+    }
+    .text-div {
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+    h1 {
+        font-size: 27px;
+    }
+    .benefits {
+        margin-bottom: 2rem;
+    }
+    .flex-stats {
+        flex-direction: column;
+    }
+    .stats {
+        margin-top: 1.5rem;
+    }
 }
